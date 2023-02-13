@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap')
+
+$main_font: 'Bai Jamjuree'
+
+$cyan: hsl(171, 66%, 44%)
+$light_blue: hsl(233, 100%, 69%)
+$dark_gray_blue: hsl(210, 10%, 33%)
+$gray_blue: hsl(201, 11%, 66%)
+
+$desktop: 1300px
+
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+body
+    display: grid
+    place-items: center
+    font-family: $main_font
+    background: url("/images/bg-header-mobile.png") top left no-repeat
+    background-size: 100%
+    @media screen and ( min-width: $desktop )
+        background: url("/images/bg-header-desktop.png") top left no-repeat
+        background-size: 100%
+
+.text
+    color: $gray_blue
+    @media screen and ( min-width: $desktop )
+        font-size: 1.5em
+        line-height: 1.5em
+        // width: 65%
+
+.headline
+    color: $dark_gray_blue
+    margin-bottom: 1rem
+    @media screen and ( min-width: $desktop )
+        font-size: 3.5em
+        margin-bottom: .5em
+
+.sub
+    font-size: 1.7rem
+    @media screen and ( min-width: $desktop )
+        font-size: 3em
+
+.ios_download, .mac_download
+    all: unset
+    font-family: $main_font
+    font-size: 1.1rem
+    font-weight: 600
+    width: 100%
+    padding: 1rem 0
+    border-radius: 50px
+    color: white
+    box-shadow: 0px 0px 5px 0px hsl(0deg 0% 0%/ 0.5 )
+    cursor: pointer
+    @media screen and ( min-width: $desktop )
+        font-size: 1.6em
+        padding: 1.5rem 0
+        width: 12em
+
+.ios_download
+    background-color: $cyan
+    margin: 2rem 0 1.5rem
+    &:hover
+        background-color: lighten($cyan, 10%)
+    @media screen and ( min-width: $desktop )
+        margin: 2em 1em
+
+.mac_download
+    background-color: $light_blue
+    &:hover
+        background-color: lighten($light_blue, 10%)
+
+ul
+    list-style: none
+
+main, header, footer
+    margin: 0 2rem
+    text-align: center
+
+body
+    display: flex
+    flex-direction: column
+    min-height: 100vh
+
+.introduction
+    margin-bottom: 5rem
+    img
+        max-width: auto
+        max-height: 100%
+        padding: 8rem 0 4rem 0
+    p
+        width: 99%
+    @media screen and ( min-width: $desktop )
+        p
+            width: 65%
+            margin: 0 auto
+
+.description
+    margin: 5rem 0
+    div
+        &:nth-child(1)
+            p
+                margin-bottom: 4rem
+        &:nth-child(2)
+            img
+                max-width: 100%
+                max-height: auto
+            ul
+                margin-top: 3rem
+                li
+                    margin: 3rem 0
+                    p
+                        width: 95%
+        @media screen and ( min-width: $desktop )
+            &:nth-child(1)
+                p
+                    width: 50%
+                    margin: 0 auto 4em auto
+            &:nth-child(2)
+                display: flex
+                img
+                    position: relative
+                    left: -4em
+                    width: 65%
+                ul
+                    text-align: left
+                    margin-left: 5em
+                    li
+                        h2
+                            font-size: 2em
+                        p
+                            width: 65%
+                        &:nth-child(2)
+                            margin: 4.5em 0
+
+.features
+    margin: 10rem 0 5rem 0
+
+.cloud
+    img
+        margin: 3rem 0
+        max-width: 100%
+        max-height: auto
+    @media screen and ( min-width: $desktop )
+        p
+            width: 50%
+            margin: 0 auto
+        img
+            margin: 8em 0
+            width: 65%
+
+.workflow
+    ul
+        margin-top: 5rem
+        li
+            margin: 3rem 0
+            img
+                margin-bottom: 2.3rem
+                height: 2rem
+    @media screen and ( min-width: $desktop )
+        ul
+            display: flex
+            justify-content: space-evenly
+            li
+                width: 28%
+                margin: 0
+                p
+                    margin: 0 auto
+                .list
+                    font-size: 2.5em
+                img
+                    height: 2.5em
+
+.sponsors
+    margin: 10rem 0
+    ul
+        li
+            margin: 4rem 0
+    @media screen and ( min-width: $desktop )
+        ul
+            display: flex
+            justify-content: space-evenly
+            li
+                img
+                    height: 4em
+
+.download
+    margin-bottom: 6rem
+    p
+        width: 98%
+        margin-bottom: 1rem
+    @media screen and ( min-width: $desktop )
+        p
+            width: 50%
+            margin: 0 auto
+
+.outro
+    position: relative
+    width: 100%
+    background-color: lighten($gray_blue, 30%)
+    padding: 3rem 0
+    .business_logo
+        max-width: 15%
+        max-height: auto
+    @media screen and ( min-width: $desktop )
+        display: flex
+        justify-content: space-between
+        max-height: 12em
+        margin-top: auto
+        padding: 2em 10em
+        div
+            display: flex
+            gap: 8em
+            width: 60%
+            .business_logo
+                width: 5em
+                height: 5em
+                margin: auto 0
+
+.outro_links
+    li
+        margin: 2rem
+        a
+            text-decoration: none
+            &:visited
+                color: $dark_gray_blue
+            p
+                color: $dark_gray_blue
+                &:hover
+                    color: $cyan
+    @media screen and ( min-width: $desktop )
+        display: flex
+        flex-direction: column
+        flex-wrap: wrap
+        height: inherit
+        width: 100%
+        padding: 1em
+        li
+            margin: 1.4em
+            a
+                text-align: left
+                p
+                    line-height: 0
+
+.socials
+    margin: 4rem 0
+    display: flex
+    justify-content: center
+    align-items: center
+    li
+        margin: 0 1rem
+        a
+            i
+                font-size: 1.7rem
+                color: #4C545C
+                &:visited
+                    color: #4C545C
+                &:hover
+                    color: $cyan
+                @media screen and ( min-width: $desktop )
+                    font-size: 2.5em
+                    width: 1em
+
+.author
+    position: absolute
+    bottom: 0
+    left: 15%
+    @media screen and ( min-width: $desktop )
+        left: 43%
+.attribution 
+    font-size: 11px
+    text-align: center
+    a 
+        color: hsl(228, 45%, 44%)
+      

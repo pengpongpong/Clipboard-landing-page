@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  font-family: "Bai Jamjuree";
+  background: url("/images/bg-header-mobile.png") top left no-repeat;
+  background-size: 100%;
+}
+@media screen and (min-width: 1300px) {
+  body {
+    background: url("/images/bg-header-desktop.png") top left no-repeat;
+    background-size: 100%;
+  }
+}
+
+.text {
+  color: hsl(201deg, 11%, 66%);
+}
+@media screen and (min-width: 1300px) {
+  .text {
+    font-size: 1.5em;
+    line-height: 1.5em;
+  }
+}
+
+.headline {
+  color: hsl(210deg, 10%, 33%);
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 1300px) {
+  .headline {
+    font-size: 3.5em;
+    margin-bottom: 0.5em;
+  }
+}
+
+.sub {
+  font-size: 1.7rem;
+}
+@media screen and (min-width: 1300px) {
+  .sub {
+    font-size: 3em;
+  }
+}
+
+.ios_download, .mac_download {
+  all: unset;
+  font-family: "Bai Jamjuree";
+  font-size: 1.1rem;
+  font-weight: 600;
+  width: 100%;
+  padding: 1rem 0;
+  border-radius: 50px;
+  color: white;
+  box-shadow: 0px 0px 5px 0px hsla(0deg, 0%, 0%, 0.5);
+  cursor: pointer;
+}
+@media screen and (min-width: 1300px) {
+  .ios_download, .mac_download {
+    font-size: 1.6em;
+    padding: 1.5rem 0;
+    width: 12em;
+  }
+}
+
+.ios_download {
+  background-color: hsl(171deg, 66%, 44%);
+  margin: 2rem 0 1.5rem;
+}
+.ios_download:hover {
+  background-color: #3cd7c0;
+}
+@media screen and (min-width: 1300px) {
+  .ios_download {
+    margin: 2em 1em;
+  }
+}
+
+.mac_download {
+  background-color: hsl(233deg, 100%, 69%);
+}
+.mac_download:hover {
+  background-color: #94a0ff;
+}
+
+ul {
+  list-style: none;
+}
+
+main, header, footer {
+  margin: 0 2rem;
+  text-align: center;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.introduction {
+  margin-bottom: 5rem;
+}
+.introduction img {
+  max-width: auto;
+  max-height: 100%;
+  padding: 8rem 0 4rem 0;
+}
+.introduction p {
+  width: 99%;
+}
+@media screen and (min-width: 1300px) {
+  .introduction p {
+    width: 65%;
+    margin: 0 auto;
+  }
+}
+
+.description {
+  margin: 5rem 0;
+}
+.description div:nth-child(1) p {
+  margin-bottom: 4rem;
+}
+.description div:nth-child(2) img {
+  max-width: 100%;
+  max-height: auto;
+}
+.description div:nth-child(2) ul {
+  margin-top: 3rem;
+}
+.description div:nth-child(2) ul li {
+  margin: 3rem 0;
+}
+.description div:nth-child(2) ul li p {
+  width: 95%;
+}
+@media screen and (min-width: 1300px) {
+  .description div:nth-child(1) p {
+    width: 50%;
+    margin: 0 auto 4em auto;
+  }
+  .description div:nth-child(2) {
+    display: flex;
+  }
+  .description div:nth-child(2) img {
+    position: relative;
+    left: -4em;
+    width: 65%;
+  }
+  .description div:nth-child(2) ul {
+    text-align: left;
+    margin-left: 5em;
+  }
+  .description div:nth-child(2) ul li h2 {
+    font-size: 2em;
+  }
+  .description div:nth-child(2) ul li p {
+    width: 65%;
+  }
+  .description div:nth-child(2) ul li:nth-child(2) {
+    margin: 4.5em 0;
+  }
+}
+
+.features {
+  margin: 10rem 0 5rem 0;
+}
+
+.cloud img {
+  margin: 3rem 0;
+  max-width: 100%;
+  max-height: auto;
+}
+@media screen and (min-width: 1300px) {
+  .cloud p {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .cloud img {
+    margin: 8em 0;
+    width: 65%;
+  }
+}
+
+.workflow ul {
+  margin-top: 5rem;
+}
+.workflow ul li {
+  margin: 3rem 0;
+}
+.workflow ul li img {
+  margin-bottom: 2.3rem;
+  height: 2rem;
+}
+@media screen and (min-width: 1300px) {
+  .workflow ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .workflow ul li {
+    width: 28%;
+    margin: 0;
+  }
+  .workflow ul li p {
+    margin: 0 auto;
+  }
+  .workflow ul li .list {
+    font-size: 2.5em;
+  }
+  .workflow ul li img {
+    height: 2.5em;
+  }
+}
+
+.sponsors {
+  margin: 10rem 0;
+}
+.sponsors ul li {
+  margin: 4rem 0;
+}
+@media screen and (min-width: 1300px) {
+  .sponsors ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .sponsors ul li img {
+    height: 4em;
+  }
+}
+
+.download {
+  margin-bottom: 6rem;
+}
+.download p {
+  width: 98%;
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 1300px) {
+  .download p {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+.outro {
+  position: relative;
+  width: 100%;
+  background-color: #f4f5f6;
+  padding: 3rem 0;
+}
+.outro .business_logo {
+  max-width: 15%;
+  max-height: auto;
+}
+@media screen and (min-width: 1300px) {
+  .outro {
+    display: flex;
+    justify-content: space-between;
+    max-height: 12em;
+    margin-top: auto;
+    padding: 2em 10em;
+  }
+  .outro div {
+    display: flex;
+    gap: 8em;
+    width: 60%;
+  }
+  .outro div .business_logo {
+    width: 5em;
+    height: 5em;
+    margin: auto 0;
+  }
+}
+
+.outro_links li {
+  margin: 2rem;
+}
+.outro_links li a {
+  text-decoration: none;
+}
+.outro_links li a:visited {
+  color: hsl(210deg, 10%, 33%);
+}
+.outro_links li a p {
+  color: hsl(210deg, 10%, 33%);
+}
+.outro_links li a p:hover {
+  color: hsl(171deg, 66%, 44%);
+}
+@media screen and (min-width: 1300px) {
+  .outro_links {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: inherit;
+    width: 100%;
+    padding: 1em;
+  }
+  .outro_links li {
+    margin: 1.4em;
+  }
+  .outro_links li a {
+    text-align: left;
+  }
+  .outro_links li a p {
+    line-height: 0;
+  }
+}
+
+.socials {
+  margin: 4rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.socials li {
+  margin: 0 1rem;
+}
+.socials li a i {
+  font-size: 1.7rem;
+  color: #4C545C;
+}
+.socials li a i:visited {
+  color: #4C545C;
+}
+.socials li a i:hover {
+  color: hsl(171deg, 66%, 44%);
+}
+@media screen and (min-width: 1300px) {
+  .socials li a i {
+    font-size: 2.5em;
+    width: 1em;
+  }
+}
+
+.author {
+  position: absolute;
+  bottom: 0;
+  left: 15%;
+}
+@media screen and (min-width: 1300px) {
+  .author {
+    left: 43%;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}/*# sourceMappingURL=style.css.map */
