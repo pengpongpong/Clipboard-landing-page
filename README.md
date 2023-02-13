@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/pengpongpong/Clipboard-landing-page)
-- Live Site URL: [Add live site URL here](https://pengpongpong.github.io/Clipboard-landing-page/)
+- Live Site URL: [Add live site URL here](https://comforting-pithivier-a18478.netlify.app/)
 
 ## My process
 
